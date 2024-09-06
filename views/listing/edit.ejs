@@ -1,0 +1,29 @@
+<% layout("/layouts/boilerplate.ejs") -%>
+<body>
+  <p id="heading1">Edit Resort</p>
+    <form  method="post", action="/edit/<%= data._id %>?_method=PATCH">
+      <textarea name="title" tyep="text" class="area"><%=data.title%>
+      </textarea>
+        <br>
+        
+    <textarea name="description" tyep="text"  cols="20"  rows="5"><%=data.description%>
+    </textarea>       
+    <br>
+
+    <textarea name="price" tyep="number" class="area"><%=data.price%>
+      </textarea>
+    <br>
+    <textarea name="location" tyep="text" class="area"><%=data.location%>
+      </textarea>
+        <br>
+
+        <textarea name="country" tyep="text" class="area"><%=data.country%>
+          </textarea>
+      
+    
+        <br>
+      
+       <button>Submit</button>
+       <br>
+     </form>
+</body>

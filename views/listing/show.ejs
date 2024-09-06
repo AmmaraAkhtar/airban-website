@@ -1,0 +1,32 @@
+<% layout("/layouts/boilerplate.ejs") -%>
+<body>
+
+  <form>
+    <img src="<%= data.image%>">
+          <p><b><%= data.title%></b></p>
+          <p><%= data.description%></p>
+          <p><b>Price: &nbsp;</b>&#8377;<%= data.price%>/night</p>
+          <p><b>Location:  &nbsp;</b><%= data.location%></p>
+          <p><b>Country:  &nbsp;</b><%= data.country%></p>
+  </form>
+ <div id="buttons">
+  <form  method="get"  action="/edit/<%= data._id %>">
+    <button >
+    Edit
+    </button>
+</form> 
+    
+      
+            <form  method="post"  action="/delete/<%= data._id %>?_method=DELETE">
+                  <button >
+                  Delete
+                  </button>
+            </form>   
+
+          </div> 
+
+          <br>
+          <br>
+       
+          
+</body>

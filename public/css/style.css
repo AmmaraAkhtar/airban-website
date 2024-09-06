@@ -1,0 +1,403 @@
+
+
+
+body{
+    overflow-x: hidden;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+
+    font-style: normal;
+    font-size: 10px;
+}
+#head-con{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+ align-items: center;
+    /* position: fixed;
+    top: 0%; */
+    height: 6rem;
+    width: 100%;
+ 
+    
+    border-bottom: 0.1rem;
+ border-color: rgb(144, 146, 146);
+ border-style: solid;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ 
+
+ 
+}
+#head-icon {
+    margin-left: 3rem;
+    color: #e63e62;
+    display: flex;
+}
+#head-icon i{
+    font-size: 3rem;
+    color:#e63e62;
+
+}#head-icon div{
+    margin-top: 1.1rem;
+    margin-left:1rem;
+    font-size: 1rem;
+}
+#head-con #head-link{
+  margin-top:0.7rem;
+  /* border: none;
+  border: 2px;
+  border-color: #e63e62;
+  border-style: solid;
+  border-radius: 25px;  */
+  
+
+}
+#head-link a{
+  margin-left: 2rem;
+    text-decoration: none;
+    color: rgb(92, 88, 88);
+    cursor: pointer;
+    font-size: 1rem;
+}
+#head-link a:hover{
+           color: black;
+}
+.card{
+    border: none !important;
+    margin-bottom: 1rem;
+    text-align: center;
+   
+    
+}
+.card-img-top{
+    border-radius: 1.5rem !important;
+    width: 100% !important;
+    height: 20rem !important;
+object-fit: cover !important;
+
+}
+.row{
+text-align: center;
+
+}
+.row a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay i{
+ position: absolute;
+ right: 1rem;
+ top: 1rem;
+ font-size: 2rem ;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+#footer{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    background-color: rgb(212, 208, 208);
+    /* position: sticky; */
+    bottom: 0%;
+    width: 100vw;
+}
+#footer div{
+ margin-left: 2rem;
+ font-size: 1rem;
+}
+
+#links a{
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
+#footer #icons{
+    margin-left: 50rem;
+    font-size: 1rem;
+}
+
+#footer #icons i{
+margin-left: 0.5rem;
+font-size: 1rem;
+}
+#heading{
+    margin-left: 5rem;
+   color: black;
+   font-weight: 700;
+  font-size: 1.5rem;
+
+}
+#home-con{
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+#home-con #home-item{
+
+    height:330px;
+    width:350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 2rem;
+  
+} 
+#home-con #home-item img{
+
+ width: 350px;
+ height: 250px;
+ border-radius: 2rem;
+
+}
+#home-con #home-item p{
+font-size: 10px;
+}
+#home-con a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+#dil{
+    position: relative;
+    bottom:270px;
+    left: 140px;
+    z-index: 14;
+    font-size: 1.5rem;color: rgb(166, 167, 168);
+}
+#home-con #home-item img:hover{
+    background-color: white;
+    opacity: 0.8;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+ 
+    width: 30rem;
+    height: 2rem;
+    font-size: 1rem;
+}
+textarea{
+    width: 30rem;
+    font-size: 1rem;
+}
+input::placeholder{
+    color:#e63e62;
+}
+textarea::placeholder{
+    color:#e63e62; 
+}
+form button{
+    width: 13rem;
+    height: 4rem;
+    border-radius: 1.5rem;
+    color: white;
+    border: none;
+    background-color: #e63e62;
+    font-size: 1rem;
+}
+#heading1{
+    text-align: center;
+   color: black;
+   font-weight: 700;
+  font-size: 1.5rem;
+
+}
+form img{
+    height: 30rem;
+    width: 40rem;
+    border-radius: 2.5rem;
+
+}
+form p{
+    font-size: 1rem;
+}
+#buttons{
+    display: flex;
+    justify-content: center;
+}
+#buttons form{
+    margin-left: 1rem;
+}
+.area{
+    height: 2.4rem;
+}
+
+
+@media(max-width:900px){
+    html{
+        font-size:55%;
+    }
+    
+    #home-con #home-item img{
+
+        width: 250px;
+        height: 200px;
+        border-radius: 2rem;
+       
+       }
+       #home-con #home-item{
+
+        height:260px;
+        width:250px ;
+      
+    } 
+    #home-con{
+        
+        padding-left: 10rem;
+        padding-right: 2rem;
+    
+    }
+    #heading{
+        margin-left: 130px;
+    }
+    #dil{
+       bottom:170px;
+        left: 80px;
+
+    }
+}
+@media(max-width:514px){
+    html{
+        font-size:50%;
+    }
+    #links a{
+        font-size: 0.6rem;
+    }
+    #footer #icons{
+        margin-left: 30rem;
+        font-size: 1rem;
+    }
+    #footer div{
+        font-size: 0.6rem;
+       }
+  
+    form p{
+        font-size: 0.7rem;
+    }
+    form button{
+        width: 60px;
+        height: 30px;
+    }
+    button{
+        width: 60px;
+        height: 30px;
+    }
+    form img {
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:340px){
+    html{
+        font-size:45%;
+    }
+    #home-con #home-item img{
+
+        width: 200px;
+        height: 150px;
+        border-radius: 2rem;
+       
+       }
+       #home-con #home-item{
+
+        height:200px;
+      
+    } 
+    #home-con{
+        
+        padding-left: 0.1rem;
+        padding-right: 2rem;
+    
+    }
+    #heading{
+        margin-left: 100px;
+    }
+    #dil{
+       bottom:170px;
+        left: 80px;
+
+    }
+    #home-con #home-item img{
+
+        width: 200px;
+        height: 150px;
+        border-radius: 2rem;
+       
+       }
+       #home-con #home-item{
+
+        height:200px;
+      
+    } 
+    #home-con{
+        
+        padding-left: 0.1rem;
+        padding-right: 2rem;
+    
+    }
+    #heading{
+        margin-left: 50px;
+    }
+    #dil{
+       bottom:170px;
+        left: 80px;
+
+    }
+    #links a{
+        font-size: 0.6rem;
+    }
+    #footer #icons{
+        margin-left: 15rem;
+        font-size: 1rem;
+    }
+    #footer div{
+        font-size: 0.6rem;
+       }
+    form button{
+        width: 70px;
+        height: 30px;
+    }
+    form p{
+        font-size: 0.7rem;
+    }
+    button{
+        width: 50px;
+        height: 24px;
+    }
+    form img {
+        margin-bottom: 10px;
+    }
+}
+
+
+/* #footer div{
+    margin-left: 2rem;
+    font-size: 1rem;
+   }
+   
+   #links a{
+       margin-left: 0.5rem;
+       font-size: 1rem;
+   }
+   #footer #icons{
+       margin-left: 50rem;
+       font-size: 1rem;
+   }
+   
+   #footer #icons i{
+   margin-left: 0.5rem;
+   font-size: 1rem;
+   } */

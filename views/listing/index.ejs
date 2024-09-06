@@ -1,0 +1,43 @@
+ <% layout("/layouts/boilerplate.ejs") -%>
+<body>
+
+        <p id="heading">All Resorts</p>
+      <!-- <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+         
+            <% for (datas of data){%> 
+                  <a href="http://localhost:3000/show/<%= datas._id%>">
+         <div class="card col">
+    
+          
+            <img src="<%= datas.image%>" class="card-img-top" alt="...">
+            <div class="card-img-overlay"><i class="fa-regular fa-heart"></i></div>
+            <div class="card-body">
+              <p class="card-text"><b><%= datas.title %></b> <br>
+                  &#8377;<%= datas.price %>/night</p>
+            </div>
+           
+          </div>
+      </a>
+      <%}%>
+           
+          
+</div> -->
+
+<div  id="home-con">
+      <% for (datas of data){%> 
+            <a  href="http://localhost:3000/show/<%= datas._id%>">
+            <div id="home-item">
+                  <div>
+                  <img src="<%= datas.image%>">
+                  </div>
+                  <div >
+                    <p class="card-text"><b><%= datas.title %></b> <br>
+                        &#8377;<%= datas.price %>/night</p>
+                  </div> 
+                  <div id="dil"><i class="fa-regular fa-heart"></i></div>
+                </div>
+ </a>
+            <%}%> 
+
+</div>
+</body>

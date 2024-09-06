@@ -1,0 +1,33 @@
+<% layout("/layouts/boilerplate.ejs") -%>
+<body>
+
+  <p id="heading1">Add Resort</p>
+     <form  method="post", action="/create" >
+
+        
+        <input type="text" placeholder="Enter the title" name="title">
+        <br>
+        
+    <textarea name="description" tyep="text" cols="20"  rows="5" placeholder=" Enter the description">
+   
+    </textarea>       
+    <br>
+    
+    <input type="text" placeholder="Enter the image URL" name="image">
+    <br>
+    
+    <input type="number" placeholder="Enter the price" name="price">
+    <br>
+    
+        <input type="text" placeholder="Enter the location" name="location">
+        <br>
+        
+        <input type="text" placeholder="Enter the country" name="country">
+        <br>
+        
+       <button>Submit</button>
+     </form>
+     <br>
+     <br>
+     
+</body>
